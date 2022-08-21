@@ -7,7 +7,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 
 class UserApiRepository {
-    suspend fun getAllUsers(): Response<List<User>> {
+    suspend fun getAllUsers(): Response<ResponseModel> {
         return RetrofitInstance.api.getAllUsers()
     }
 }

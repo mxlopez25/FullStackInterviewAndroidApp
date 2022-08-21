@@ -7,7 +7,7 @@ import retrofit2.http.GET
 
 interface UserApiService {
     @GET("user/all")
-    suspend fun getAllUsers(): Response<List<User>> {
+    suspend fun getAllUsers(): Response<ResponseModel> {
         return RetrofitInstance.api.getAllUsers()
     }
 }
