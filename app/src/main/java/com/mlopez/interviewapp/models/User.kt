@@ -1,7 +1,7 @@
 package com.mlopez.interviewapp.models
 
 data class User(
-    val id: Int,
+    val id: Int? = null,
     val firstName: String? = null,
     val lastName: String? = null,
     val email: String? = null,
